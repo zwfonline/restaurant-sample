@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Bar</title>
+    <style> /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background: url('https://planetseafood.com.au/wp-content/uploads/2021/11/DSC01459-Edit-1.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            width: auto;
+            height: 700PX;
+            
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .topul{
+            margin-top:0;
+            background-color: none;
+        }
+        
+        .menu-category {
+
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* 确保文本居中 */
+}
+
+.seafoodpic{
+    width: 100%;
+}
+.platterConainer{
+    display: flex;
+}
+.seafood-platter{flex:1; width: 50%; padding: 40px;text-align: center;align-items: center; margin-top: 20%;}
+.seafood-container{width: 50%; flex: 1;}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    text-align: left; /* 确保文本左对齐 */
+    flex-wrap: wrap; /* 确保换行 */
+}
+.restaurantDescription {
+    width: 70%;
+    text-align: center;
+    padding: 50px;
+    margin-left: 15%;
+}
+
+.restaurantDescription h1, .restaurantDescription h2 {
+    color: #333;
+}
+
+.restaurantDescription p {
+    color: #666;
+    line-height: 1.6;
+}
+.menu-item h3 {
+    font-size: 1.5em;
+    color: white;
+    flex: 1;
+}
+
+.menu-item .price {
+    font-size: 1.5em;
+    color: white;
+    margin-left: 20px;
+}
+
+.menu-item p {
+    flex: 1 100%;
+    color: white;
+    margin: 0;
+}
+
+        nav ul li {
+            margin: 0 25px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .hero {
+            margin-top: 50px;
+            margin-top: 14%;
+            
+            
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .menu-category h3,
+    .menu-category p {
+    color: white;}
+
+    #menu h2 {
+    color: white;
+    }
+.restaurantPic{width: 100%;}
+.restaurantPicContainer{width: 100%;}
+        .booking-button {
+            background-color: #ffa500;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-info{
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contact-item {
+            margin: 20px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        .icon {
+            font-size: 2em;
+            color: #ffa500;
+        }
+        
+        .menu-category {
+            margin: 20px 0;
+        }
+        .menu{
+            background-color: #171414;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 20px;
+        }
+        .title1{
+            color: white;
+
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .footer-content div {
+            margin: 10px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            .hero{
+                margin-top:230px
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .title1{
+                font-size:26px !important;
+            }
+            .contact-info{
+            height: 700px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .restaurantDescription{width: 80%; padding:10px; margin-left: 10%;}
+        .seafood-container{display: none;}
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="topul">
+                <li><a href="#a-la-carte-menu">Food Menu</a></li>
+                <li><a href="#beverages">Beverages</a></li>
+                <li><a href="#set-menu">Set Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#bookings">Bookings</a></li>
+                <li><a href="tel:+0212345678">(02) 1234 5678 </a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1 class="title1">Seafood & Grill Restaurant</h1>
+            <p>Open for lunch & dinner</p>
+            <a href="#bookings" class="booking-button">Make a Booking</a>
+        </div>
+    </header>
+    
+    <section id="contact-info" class="contact-info">
+        <div class="contact-item">
+            <span class="icon">📍</span>
+            <p>3/56 Rabaul Road<br>Georges Hall, NSW 2198<br>(off Henry Lawson Drive)</p>
+        </div>
+        <div class="contact-item">
+            <span class="icon">🕒</span>
+            <p>Dinner: Tue-Thu & Sun 5pm - 9:30pm<br>Fri-Sat 5pm - 10:30pm<br>Lunch: Tue-Sat 11:30am - 3pm<br>Sun: 11:30am - 4pm<br>CLOSED MONDAY</p>
+        </div>
+        <div class="contact-item">
+            <span class="icon">📞</span>
+            <p>(02) 1234-5678</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Menu</h2>
+        <div class="menu-category">
+            <div class="menu-item">
+                <h3>SOFT SHELL CRAB <span class="price">$19 / $29</span></h3>
+                <p>Whole baby crab fried in a tempura batter with a Thai style soy dressing</p>
+            </div>
+            <div class="menu-item">
+                <h3>HALOUMI CHEESE (gf) <span class="price">$19 / $29</span></h3>
+                <p>Grilled and served with olives, roquette and roasted capsicum sauce</p>
+            </div>
+            <div class="menu-item">
+                <h3>SLIPPER LOBSTER LINGUINE <span class="price">$25 / $39</span></h3>
+                <p>Slipper lobster tail meat tossed with linguini pasta and finished off with a creamy tomato flambé and prawn sauce</p>
+            </div>
+            <div class="menu-item">
+                <h3>COLD SEAFOOD PLATE (gf) <span class="price">$29 / $45</span></h3>
+                <p>A tasting plate with a selection of prawns, pacific oysters, smoked salmon and slipper lobster - served with wasabi lime mayo, soy dipping sauce and lemon</p>
+            </div>
+            <div class="menu-item">
+                <h3>LEMON PEPPER CALAMARI <span class="price">$22 / $35</span></h3>
+                <p>Fresh marinated squid served with roquette salad and in-house lime aioli</p>
+            </div>
+            <div class="menu-item">
+                <h3>BBQ OCTOPUS (gf) <span class="price">$25 / $35</span></h3>
+                <p>House marinated, tossed with olives, cherry tomatoes, fetta cheese, onion and grilled artichoke hearts</p>
+            </div>
+            <div class="menu-item">
+                <h3>MINI SEAFOOD PAELLA <span class="price">$22 / $39</span></h3>
+                <p>Traditional Spanish dish consisting of a saffron-flavoured rice cooked with a compilation of prawn, mussel, calamari and octopus</p>
+            </div>
+            <div class="menu-item">
+                <h3>MORNAY SCALLOPS <span class="price">$25 / $35</span></h3>
+                <p>Gratinated scallops cooked in mornay sauce served in a half shell - accompanied with crispy prosciutto</p>
+            </div>
+            <div class="menu-item">
+                <h3>PRAWN MARTINI (gf) <span class="price">$22 / $35</span></h3>
+                <p>Fresh tiger prawns served with mango salad and cocktail sauce</p>
+            </div>
+            <div class="menu-item">
+                <h3>CHILLI POT PRAWNS (gf) <span class="price">$26 / $36</span></h3>
+                <p>Garlic prawns in Napolitana sauce accompanied with crusty Italian bread</p>
+            </div>
+            <div class="menu-item">
+                <h3>PESTO CHICKEN PASTA <span class="price">$22 / $35</span></h3>
+                <p>Chicken cooked in a traditional creamy pesto mushroom sauce</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="platterConainer">
+        <div class="seafood-container"><img src="https://www.recipetineats.com/uploads/2023/12/Seafood-Platter_Sony-5.jpg" class="seafoodpic"></div>
+        <div id="seafood-platter" class="seafood-platter">
+            <h2>Aquarius Seafood Platter</h2>
+            <div class="platter-details">
+                <h3>Cold Plate</h3>
+                <p>Premium Pacific oysters, smoked salmon, Cooked tiger prawns and crab.</p>
+                <h3>Hot Plate</h3>
+                <p>Lobster (mornay or herb & garlic sauce), lemon peppered calamari, fish fillets, BBQ octopus, BBQ king prawns; grilled bugs, seared scallops in garlic butter sauce, served with chips, cocktail sauce and garden salad.</p>
+                <p>Platter for 2 $195 / Platter for 3 $289 / Platter for 4 $379</p>
+                <p>10 % Surcharge on Sundays and Public Holidays</p>
+            </div>
+        </div>
+    </div>
+    <div class="introContainer">
+        <div class="restaurantPicContainer">
+            <img src="https://iili.io/dK3zAyF.jpg" class="restaurantPic">
+        </div>
+        <div class="restaurantDescription">
+            <h1>Welcome to Manhattan Seafood Restaurant – New York’s Premier Seafood Experience</h1>
+            <p>Welcome to <strong>Manhattan Seafood Restaurant</strong>, where culinary excellence meets the ocean's bountiful treasures. Nestled in the heart of the city, our seafood restaurant in New York is renowned for its commitment to serving the freshest, most exquisite seafood dishes. As the <strong>best seafood restaurant in New York</strong>, we hold a team of talented chefs, impeccable service, and a charming ambiance. We promise an unparalleled dining experience for seafood enthusiasts and culinary connoisseurs alike.</p>
+    
+            <h2>A Feast for the Senses</h2>
+            <p>At <strong>Manhattan Seafood Restaurant</strong>, we believe that the <strong>best seafood in New York</strong> begins with the finest ingredients. We source our seafood meticulously, ensuring that every dish is crafted with the utmost care and attention to detail. From succulent lobster and melt-in-your-mouth scallops to delicate oysters and tender fish fillets, our seafood restaurant in New York offers a diverse selection to tantalize your taste buds.</p>
+    
+            <h2>The Best Seafood Platter in New York</h2>
+            <p>Indulge in the ultimate gastronomic experience with our <strong>best seafood platter in New York</strong>. Savor a symphony of flavors from the deep blue sea, meticulously curated to satisfy your cravings. Dive into the <strong>best seafood buffet New York</strong> which includes a generous medley of fresh, succulent prawns, tender lobster tails, mouthwatering crab legs, and perfectly grilled fish fillets. Accompanied by a tantalizing array of dipping sauces and served with a side of seasoned vegetables, our seafood platter New York is a feast for the senses. Immerse yourself in a culinary adventure and discover the unparalleled taste of the ocean, all in one irresistible platter. Come, join us in our Manhattan seafood haven and let your taste buds embark on a voyage of pure indulgence!</p>
+    
+            <p>Whether you are a seafood aficionado or simply seeking an unforgettable dining experience, Manhattan Seafood Restaurant is the destination of choice. Book your table now and embark on a voyage of culinary discovery like no other.</p>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="address">
+                <p>9340 5th Ave, Brooklyn, NY 11209, United States</p>
+                <p>(02) 1234 5678</p>
+                <p>aquariusseafood@yahoo.com.us</p>
+            </div>
+            <div class="hours">
+                <p>Mon 11:30am - 8:00pm, 5:00pm - 9:30pm</p>
+                <p>Tue-Sun 11:30am - 8:00pm, 5:00pm - 9:30pm</p>
+            </div>
+            <div class="covid-safe">
+                <p>We are a registered COVID Safe venue.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
