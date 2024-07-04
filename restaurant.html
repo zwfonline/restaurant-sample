@@ -39,14 +39,49 @@
     padding: 20px;
     text-align: center; /* 确保文本居中 */
 }
+.menuText{font-size: 50px;}
+.contact-form button,
+.booking-button,
+.orderButton {
+    cursor: pointer;
+    background-color: #333;
+    font-size: 30px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10%;
+    width: 250px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+nav ul.topul li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 
+nav ul.topul li a:hover {
+    color: #ffa500;
+    transform: scale(1.05);
+}
+.contact-form button:hover,
+.booking-button:hover,
+.orderButton:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+.social-media .sociaoIcon a svg {
+    width: 24px;
+    height: 24px;
+}
+.platter-details{display: flex;
+            flex-direction: column; /* 使内容垂直排列 */
+            justify-content: center; /* 垂直居中 */
+            align-items: center; /* 水平居中 */}
+.sociaoIcon{height: 50px;}
 .seafoodpic{
     width: 100%;
 }
-.platterConainer{
-    display: flex;
-}
-.seafood-platter{flex:1; width: 50%; padding: 40px;text-align: center;align-items: center; margin-top: 20%;}
+.platterConainer{display: flex;}
+.leaveM{text-align: center; font-size: 30px; margin-top: 70px;}
+.seafood-platter{flex:1; width: 50%; padding: 40px;text-align: center;align-items: center; margin-top: 13%;}
 .seafood-container{width: 50%; flex: 1;}
 .menu-item {
     display: flex;
@@ -58,13 +93,57 @@
     text-align: left; /* 确保文本左对齐 */
     flex-wrap: wrap; /* 确保换行 */
 }
+.contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            width: 70%;
+            margin-left: 15%;
+        }
+        .contact-form {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #444;
+            background-color: #222;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+        .map-container {
+            flex: 1;
+            padding: 20px;
+            height: 400px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;}
 .restaurantDescription {
     width: 70%;
     text-align: center;
     padding: 50px;
     margin-left: 15%;
 }
-
+.contact-info1{display: flex;justify-content: center; height: 600px; align-items: center;}
 .restaurantDescription h1, .restaurantDescription h2 {
     color: #333;
 }
@@ -78,7 +157,7 @@
     color: white;
     flex: 1;
 }
-
+.orderButton{cursor: pointer; background-color: #333; font-size: 30px; border-radius: 100px; padding: 10px; margin-top:10%; width: 250px; color: white;}
 .menu-item .price {
     font-size: 1.5em;
     color: white;
@@ -126,14 +205,15 @@
     }
 .restaurantPic{width: 100%;}
 .restaurantPicContainer{width: 100%;}
-        .booking-button {
-            background-color: #ffa500;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-        }
+.booking-button {
+    background-color: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
         
         section {
             padding: 50px 20px;
@@ -141,8 +221,7 @@
         }
 
         .contact-info{
-            height: 700px;
-            display: flex;
+            height: 250px;
             justify-content: center;
             align-items: center;
         }
@@ -166,20 +245,62 @@
         }
         
         footer {
-            background-color: #333;
-            color: white;
-            padding: 50px 20px;
-        }
+    background-color: #171414;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 10%;
+}
         .title1{
             color: white;
 
         }
         
         .footer-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
+
+
+  
+}
+.contact-info p,
+.address p {
+    margin: 5px 0;
+}
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.contactuscon{height: 65px;}
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.contactus{font-size: 25px; margin-bottom:100px ;}
+
         
         .footer-content div {
             margin: 10px;
@@ -189,22 +310,28 @@
             nav ul {
                 display: none;
             }
-            .hero{
-                margin-top:230px
-            }
+            .hero{margin-top:230px}
+            .contact-container {
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 80%;
+            margin-left: 5%;
+        }
             .hero h1 {
                 font-size: 2em;
             }
             .title1{
                 font-size:26px !important;
             }
-            .contact-info{
+            .contact-info1{
             height: 700px;
             display: flex;
             flex-direction: column; 
             justify-content: center; 
             align-items: center;
         }
+        .map-container{display: none;}
         .restaurantDescription{width: 80%; padding:10px; margin-left: 10%;}
         .seafood-container{display: none;}
             .footer-content {
@@ -234,7 +361,7 @@
         </div>
     </header>
     
-    <section id="contact-info" class="contact-info">
+    <section id="contact-info" class="contact-info1">
         <div class="contact-item">
             <span class="icon">📍</span>
             <p>3/56 Rabaul Road<br>Georges Hall, NSW 2198<br>(off Henry Lawson Drive)</p>
@@ -250,7 +377,7 @@
     </section>
 
     <section id="menu" class="menu">
-        <h2>Menu</h2>
+        <h2 class="menuText">Menu</h2>
         <div class="menu-category">
             <div class="menu-item">
                 <h3>SOFT SHELL CRAB <span class="price">$19 / $29</span></h3>
@@ -311,6 +438,7 @@
                 <p>Lobster (mornay or herb & garlic sauce), lemon peppered calamari, fish fillets, BBQ octopus, BBQ king prawns; grilled bugs, seared scallops in garlic butter sauce, served with chips, cocktail sauce and garden salad.</p>
                 <p>Platter for 2 $195 / Platter for 3 $289 / Platter for 4 $379</p>
                 <p>10 % Surcharge on Sundays and Public Holidays</p>
+                <div class="orderButton">Order Now!</div>
             </div>
         </div>
     </div>
@@ -331,28 +459,66 @@
             <p>Whether you are a seafood aficionado or simply seeking an unforgettable dining experience, Manhattan Seafood Restaurant is the destination of choice. Book your table now and embark on a voyage of culinary discovery like no other.</p>
         </div>
     </div>
+
+    <h2 class="leaveM">Leave a message!</h2>
+    <div class="contact-container">
+        <div class="contact-form">
+            <form>
+                <input type="text" name="first-name" placeholder="First Name" required>
+                <input type="text" name="last-name" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.929214018421!2d-73.99966548459402!3d40.70206707933165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a19c1db36b9%3A0x33b26b153d8f1a0!2sRed%20Hook%20Soccer%20Field!5e0!3m2!1sen!2sus!4v1623342345678!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
     
 
     <footer>
         <div class="footer-content">
-            <div class="social-media">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+            <div class="contact-info">
+                <div class="contactuscon"><p class="contactus"><strong>Contact Us</strong></p></div>
+
+                <div class="social-media">
+                  <div class="sociaoIcon"> <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                        </path>
+                    </svg></a>
+                    <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                        </path>
+                    </svg></a>
+                    <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                        </path>
+                    </svg></a>
+                    <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                        </path>
+                    </svg></a>
+                </div> 
+                    <p><strong>Address</strong></p>
+                    <p>9340 5th Ave, Brooklyn, NY 11209, United States</p>
+                    <p>(02) 1234 5678</p>
+                    <p>seafood@Aki.com.us</p>
+                    <p>&copy; 2024 All Rights Reserved.</p>
+                    <p>
+                        <a href="#">Accessibility</a> |
+                        <a href="#">Privacy Policy</a> |
+                        <a href="#">Site Map</a> |
+                        <a href="#">Tracking Preferences</a>
+                </div>
             </div>
-            <div class="address">
-                <p>9340 5th Ave, Brooklyn, NY 11209, United States</p>
-                <p>(02) 1234 5678</p>
-                <p>aquariusseafood@yahoo.com.us</p>
-            </div>
-            <div class="hours">
-                <p>Mon 11:30am - 8:00pm, 5:00pm - 9:30pm</p>
-                <p>Tue-Sun 11:30am - 8:00pm, 5:00pm - 9:30pm</p>
-            </div>
-            <div class="covid-safe">
-                <p>We are a registered COVID Safe venue.</p>
-            </div>
+            </p>
         </div>
     </footer>
+    
 </body>
 </html>
