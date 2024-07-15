@@ -42,6 +42,11 @@
 .menuText{font-size: 50px;}
 .contact-form button,
 .booking-button,
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .orderButton {
     cursor: pointer;
     background-color: #333;
@@ -58,7 +63,7 @@ nav ul.topul li a {
 }
 
 nav ul.topul li a:hover {
-    color: #ffa500;
+    color: #444;
     transform: scale(1.05);
 }
 .contact-form button:hover,
@@ -79,11 +84,14 @@ nav ul.topul li a:hover {
 .seafoodpic{
     width: 100%;
 }
+.b12{background-color: #FFA500; padding: 8px; border-radius: 60px;}
 .platterConainer{display: flex;}
 .leaveM{text-align: center; font-size: 30px; margin-top: 70px;}
 .seafood-platter{flex:1; width: 50%; padding: 40px;text-align: center;align-items: center; margin-top: 13%;}
 .seafood-container{width: 50%; flex: 1;}
 .menu-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,7 +151,7 @@ nav ul.topul li a:hover {
     padding: 50px;
     margin-left: 15%;
 }
-.contact-info1{display: flex;justify-content: center; height: 600px; align-items: center;}
+.contact-info1{display: flex;justify-content: center; height: 300px; align-items: center;}
 .restaurantDescription h1, .restaurantDescription h2 {
     color: #333;
 }
@@ -157,7 +165,7 @@ nav ul.topul li a:hover {
     color: white;
     flex: 1;
 }
-.orderButton{cursor: pointer; background-color: #333; font-size: 30px; border-radius: 100px; padding: 10px; margin-top:10%; width: 250px; color: white;}
+.orderButton{cursor: pointer; background-color: #FFA500; font-size: 30px; border-radius: 100px; padding: 10px; margin-top:10%; width: 250px; color: white;}
 .menu-item .price {
     font-size: 1.5em;
     color: white;
@@ -211,7 +219,10 @@ nav ul.topul li a:hover {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: 15px;
+    width: 10%;
+    margin-left: 44%;
+    margin-top: 2%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
         
@@ -311,6 +322,7 @@ nav ul.topul li a:hover {
             nav ul {
                 display: none;
             }
+            .menu-item {flex:1 1 100%;}
             .hero{margin-top:230px}
             .contact-container {
             justify-content: center;
@@ -332,6 +344,7 @@ nav ul.topul li a:hover {
             justify-content: center; 
             align-items: center;
         }
+        .booking-button{font-size: 12px;margin-top: 12%;}
         .map-container{display: none;}
         .restaurantDescription{width: 80%; padding:10px; margin-left: 10%;}
         .seafood-container{display: none;}
@@ -346,13 +359,13 @@ nav ul.topul li a:hover {
     <header>
         <nav>
             <ul class="topul">
-                <li><a href="#a-la-carte-menu">Food Menu</a></li>
-                <li><a href="#beverages">Beverages</a></li>
-                <li><a href="#set-menu">Set Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#functions">Functions</a></li>
-                <li><a href="#bookings">Bookings</a></li>
-                <li><a href="tel:+0212345678">(02) 1234 5678 </a></li>
+                <li><a href="#a-la-carte-menu" class="b12">Food Menu</a></li>
+                <li><a href="#beverages" class="b12">Beverages</a></li>
+                <li><a href="#set-menu" class="b12">Set Menu</a></li>
+                <li><a href="#gallery" class="b12">Gallery</a></li>
+                <li><a href="#functions" class="b12">Functions</a></li>
+                <li><a href="#bookings" class="b12">Bookings</a></li>
+                <li><a href="tel:+0212345678" class="b12">(02) 8547 5748 </a></li>
             </ul>
         </nav>
         <div class="hero">
@@ -361,6 +374,22 @@ nav ul.topul li a:hover {
             <a href="#bookings" class="booking-button">Make a Booking</a>
         </div>
     </header>
+
+    <div class="introContainer">
+        
+        <div class="restaurantDescription">
+            <h1>Welcome to Manhattan Seafood Restaurant – New York’s Premier Seafood Experience</h1>
+            <p>Welcome to <strong>Manhattan Seafood Restaurant</strong>, where culinary excellence meets the ocean's bountiful treasures. Nestled in the heart of the city, our seafood restaurant in New York is renowned for its commitment to serving the freshest, most exquisite seafood dishes. As the <strong>best seafood restaurant in New York</strong>, we hold a team of talented chefs, impeccable service, and a charming ambiance. We promise an unparalleled dining experience for seafood enthusiasts and culinary connoisseurs alike.</p>
+    
+            <h2>A Feast for the Senses</h2>
+            <p>At <strong>Manhattan Seafood Restaurant</strong>, we believe that the <strong>best seafood in New York</strong> begins with the finest ingredients. We source our seafood meticulously, ensuring that every dish is crafted with the utmost care and attention to detail. From succulent lobster and melt-in-your-mouth scallops to delicate oysters and tender fish fillets, our seafood restaurant in New York offers a diverse selection to tantalize your taste buds.</p>
+    
+            <h2>The Best Seafood Platter in New York</h2>
+            <p>Indulge in the ultimate gastronomic experience with our <strong>best seafood platter in New York</strong>. Savor a symphony of flavors from the deep blue sea, meticulously curated to satisfy your cravings. Dive into the <strong>best seafood buffet New York</strong> which includes a generous medley of fresh, succulent prawns, tender lobster tails, mouthwatering crab legs, and perfectly grilled fish fillets. Accompanied by a tantalizing array of dipping sauces and served with a side of seasoned vegetables, our seafood platter New York is a feast for the senses. Immerse yourself in a culinary adventure and discover the unparalleled taste of the ocean, all in one irresistible platter. Come, join us in our Manhattan seafood haven and let your taste buds embark on a voyage of pure indulgence!</p>
+    
+            <p>Whether you are a seafood aficionado or simply seeking an unforgettable dining experience, Manhattan Seafood Restaurant is the destination of choice. Book your table now and embark on a voyage of culinary discovery like no other.</p>
+        </div>
+    </div>
     
     <section id="contact-info" class="contact-info1">
         <div class="contact-item">
@@ -380,6 +409,7 @@ nav ul.topul li a:hover {
     <section id="menu" class="menu">
         <h2 class="menuText">Menu</h2>
         <div class="menu-category">
+            <div class="menu-container">
             <div class="menu-item">
                 <h3>SOFT SHELL CRAB <span class="price">$19 / $29</span></h3>
                 <p>Whole baby crab fried in a tempura batter with a Thai style soy dressing</p>
@@ -424,6 +454,7 @@ nav ul.topul li a:hover {
                 <h3>PESTO CHICKEN PASTA <span class="price">$22 / $35</span></h3>
                 <p>Chicken cooked in a traditional creamy pesto mushroom sauce</p>
             </div>
+            </div>
         </div>
     </section>
     
@@ -443,24 +474,10 @@ nav ul.topul li a:hover {
             </div>
         </div>
     </div>
-    <div class="introContainer">
-        <div class="restaurantPicContainer">
-            <img src="https://iili.io/dK3zAyF.jpg" class="restaurantPic">
-        </div>
-        <div class="restaurantDescription">
-            <h1>Welcome to Manhattan Seafood Restaurant – New York’s Premier Seafood Experience</h1>
-            <p>Welcome to <strong>Manhattan Seafood Restaurant</strong>, where culinary excellence meets the ocean's bountiful treasures. Nestled in the heart of the city, our seafood restaurant in New York is renowned for its commitment to serving the freshest, most exquisite seafood dishes. As the <strong>best seafood restaurant in New York</strong>, we hold a team of talented chefs, impeccable service, and a charming ambiance. We promise an unparalleled dining experience for seafood enthusiasts and culinary connoisseurs alike.</p>
     
-            <h2>A Feast for the Senses</h2>
-            <p>At <strong>Manhattan Seafood Restaurant</strong>, we believe that the <strong>best seafood in New York</strong> begins with the finest ingredients. We source our seafood meticulously, ensuring that every dish is crafted with the utmost care and attention to detail. From succulent lobster and melt-in-your-mouth scallops to delicate oysters and tender fish fillets, our seafood restaurant in New York offers a diverse selection to tantalize your taste buds.</p>
-    
-            <h2>The Best Seafood Platter in New York</h2>
-            <p>Indulge in the ultimate gastronomic experience with our <strong>best seafood platter in New York</strong>. Savor a symphony of flavors from the deep blue sea, meticulously curated to satisfy your cravings. Dive into the <strong>best seafood buffet New York</strong> which includes a generous medley of fresh, succulent prawns, tender lobster tails, mouthwatering crab legs, and perfectly grilled fish fillets. Accompanied by a tantalizing array of dipping sauces and served with a side of seasoned vegetables, our seafood platter New York is a feast for the senses. Immerse yourself in a culinary adventure and discover the unparalleled taste of the ocean, all in one irresistible platter. Come, join us in our Manhattan seafood haven and let your taste buds embark on a voyage of pure indulgence!</p>
-    
-            <p>Whether you are a seafood aficionado or simply seeking an unforgettable dining experience, Manhattan Seafood Restaurant is the destination of choice. Book your table now and embark on a voyage of culinary discovery like no other.</p>
-        </div>
+    <div class="restaurantPicContainer">
+        <img src="https://iili.io/dK3zAyF.jpg" class="restaurantPic">
     </div>
-
     <h2 class="leaveM">Leave a message!</h2>
     <div class="contact-container">
         <div class="contact-form">
